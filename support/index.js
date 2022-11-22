@@ -15,9 +15,23 @@
 
 import '@applitools/eyes-cypress/commands'
 
-
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+beforeEach(function () {
+  cy.log('Print this')
+})
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+//const { downloadFile } = require('cypress-downloadfile/lib/addPlugin')
+//module.exports = (on, config) => {
+//on('task', { downloadFile })
+//}
+
+//Cypress.Server.defaults({
+//  whitelist: (xhr) => {
+//    return true
+//  },
+//})
